@@ -1,7 +1,7 @@
 # Personal-Project
-Website containing my favorite video songs  https://harsh116.github.io/Personal-Playlist/
+https://harsh116.github.io/Personal-Playlist/  Website containing my favorite video songs
 
-This website contains some of my best songs in grid format.
+This website contains some of my favorite songs in grid format.
 
 i) There is a button "Toggle Lyrics Panel" at top-left corner which is used to open a sidepanel which is used to display lyrics. Once the title of song is clicked then the lyrics of song is displayed at sidepanel if it is opened.
 ii) There is no collision of playing multiple songs simultaneously because if one song is playing then if other song is clicked to play then previous will be paused.

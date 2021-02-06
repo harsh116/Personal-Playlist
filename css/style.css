@@ -1,0 +1,327 @@
+body{
+	 background-image: url("../images/back2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin-left: 0px;
+}
+
+.heading_box{
+	/*padding: 40px;*/
+	/*border-size: 10px;*/
+	width:50%;
+	 border: 10px solid transparent;
+	border-image: url("../images/button texture.jpg") 30 round;	
+
+
+	margin: 0 auto;
+  
+
+
+}
+
+.playfair{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	margin-left: 15px;
+
+
+}
+.abril{
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	font-size: 3em;
+	/*color: linear-gradient(to bottom,red ,violet);*/
+	color: #A6C6A6;
+	letter-spacing: .2em;
+	/*text-decoration: underline;*/
+	/*text-decoration-color: blue;*/
+}
+
+.border{
+	border-width: 6px;
+	border-style: solid;
+	border-color: #004039;
+	object-position: top;
+	object-fit: cover;
+	margin-bottom: 0px;
+	cursor: pointer;
+	transition: 1s;
+
+    
+}
+
+.border:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.cell{
+	display: grid;
+	padding: 10px;
+	margin: 25px;
+}
+.cell>p{
+	white-space: pre;
+	color: #FFFFD8;
+	font-family: 'Coda Caption', sans-serif;
+
+}
+
+/*@media only screen and (max-width: 600px)
+{
+	.cell>p
+	{
+		white-space: pre;
+	color: #FFFFD8;
+	font-family: 'Coda Caption', sans-serif;
+	font-size: 0.7em;	
+	}
+}*/
+
+
+.container{
+	display: flex;
+	/*grid-template-columns: 1fr 1fr;*/
+	/*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));*/
+	/*grid-gap: 25px;*/
+	/*justify-content: space-between;*/
+	flex-wrap: wrap;
+	margin-left: 3%;
+}
+
+
+/*Sidepanel creation from here*/
+.sidepanel{
+	position: fixed;
+	width: 0px;
+	/*width: 25%;*/
+	height: 100%;
+	z-index: 2;
+	overflow-x: hidden;
+	background-image: linear-gradient(to bottom,#FFFFBA,#2A6A89);
+	transition: 0.5s;
+}
+
+.openbtn{
+	position: fixed;
+	border-color: black;
+	z-index: 1;
+	background-image: linear-gradient(to right, red,#A9A7DA);
+	font-weight: 800;
+	cursor: pointer;
+	
+}
+
+.openbtn:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+.sidepanel h3{
+	font-family: 'Potta One', cursive;
+}
+.sidepanel p{
+	font-family: 'Inconsolata', monospace;
+	/*font-weight: 500;*/
+}
+.sidepanel a{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	color: #230037;
+	font-size: 2em;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+.sidepanel a:hover{
+	background-color: grey;
+}
+
+#reset{
+	background-color: #870300;
+	color: white;
+	cursor: pointer;
+}
+
+#reset:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.button{
+	background-color: #123752;
+	color: white;
+	border: none;
+	margin: 10px;
+	margin-right: auto;
+	width: 25%;
+	cursor: pointer;
+}
+.button:hover{
+	background-color: #1F6495;
+}
+
+.zeroheight{
+	height: 0px;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+.rembutton{
+	background-color:  transparent;
+	color: white;
+	cursor: pointer;
+	border: none;
+	margin: 10px;
+	margin-bottom: 0px;
+	margin-right: 20px; 
+	width: 3%;
+	/*margin: 0 auto;*/
+	font-size: 1.7em;
+	/*position: absolute;*/
+	/*top: 300px;*/
+	/*left: 1060px;*/
+}
+
+.rembutton:hover{
+	background-color: rgba(180, 173, 157,0.3);
+}
+
+.repeatbtn{
+	background: linear-gradient(to right,#534CC1,#0C0858);
+	position: fixed;
+	/*z-index: 1;*/
+	border-color: black;
+	font-weight: 800;
+	cursor: pointer;
+	top: 10%;
+	color: #FFFF5F;
+	margin-top: 5px;
+}
+
+.repeatbtn:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.prevtrackbtn{
+	/*position: absolute;*/
+	/*z-index: 1;*/
+	/*top:  300px;*/
+	/*left: 300px;*/
+	background-color: black;
+	border: none;
+	color: rgba(255,255,255,1);
+	font-size: 1.7em;
+	cursor: pointer;
+	width: 10%;
+	height: 90%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.nexttrackbtn{
+	/*position: absolute;*/
+	/*z-index: 1;*/
+	/*top:  40px;*/
+	/*right: 300px;*/
+	background-color: black;
+	border: none;
+	color: rgba(255,255,255,1);
+	font-size: 1.7em;
+	cursor: pointer;
+	width: 10%;
+	height: 90%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.prevtrackbtn:hover{
+	color: #FFFF91;
+	border:none;
+}
+
+.nexttrackbtn:hover{
+	color: #FFFF91;
+	border:none;
+}
+
+.prevtrackbtn:focus{
+	outline: 0px;
+}
+
+.nexttrackbtn:focus{
+	outline: 0px;
+}
+
+.quality{
+	color: #FFFEFC;
+	background: linear-gradient(to right,#88CC88,#004400);
+	position: fixed;
+	z-index: 1;
+	top: 20%;
+	border-color: black;
+	font-weight: 800;
+	cursor: pointer;
+	margin-top: 5px;
+	-webkit-text-stroke-width: 0.4px;
+	-webkit-text-stroke-color: black;
+
+}
+
+.stroke{
+	-webkit-text-stroke-width: 0.7px;
+	-webkit-text-stroke-color: black;
+}
+
+.quality:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.lightbackground{
+	background-color: rgba(92, 91, 109,0.3);
+}
+
+.lightbackground:hover{
+	background-color: transparent;
+}
+
+.flexboxright{
+	display: flex;
+	justify-content: flex-end;
+	width: 89%;
+}
+
+.flexbox{
+	display: flex;
+}

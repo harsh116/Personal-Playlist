@@ -236,7 +236,7 @@ body{
 	/*z-index: 1;*/
 	/*top:  300px;*/
 	/*left: 300px;*/
-	background-color: black;
+	background-color: transparent;
 	border: none;
 	color: rgba(255,255,255,1);
 	font-size: 1.7em;
@@ -252,7 +252,7 @@ body{
 	/*z-index: 1;*/
 	/*top:  40px;*/
 	/*right: 300px;*/
-	background-color: black;
+	background-color: transparent;
 	border: none;
 	color: rgba(255,255,255,1);
 	font-size: 1.7em;

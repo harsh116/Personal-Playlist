@@ -1,4 +1,4 @@
-# Personal-Project
+# Personal-Playlist
 https://harsh116.github.io/Personal-Playlist.github.io/  Website containing my favorite video songs
 
 This website contains some of my favorite songs in grid format.
